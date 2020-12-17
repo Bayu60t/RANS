@@ -109,7 +109,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code Chanz'BOT is Ready, By : CHANDRA ID`)
+   console.log(`[ ${time} ] QR code Chanz'BOT is Ready, By : RANS ID`)
 })
 
 client.on('credentials-updated', () => {
@@ -123,7 +123,7 @@ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 
 client.connect();
 
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@rafiadichandra`)
+// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@story.anime45`)
 
 client.on('message-status-update', json => {
    const participant = json.participant ? ' (' + json.participant + ')' : ''
@@ -182,7 +182,7 @@ client.on('message-new', async (m) => {
            ytdl('mp3', value)
                .then(data => {
                    const { judul, size, hasil: link } = data
-                   let hasil = `*✅ Lagu Berhasil Di Download* \nSilahkan klik link dan download hasilnya. \n\nKlik link dibawah🗡️\n\nJudul: ${judul}\n\nUkuran audio: ${size}\n\nLink: ${link} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `*✅ Lagu Berhasil Di Download* \nSilahkan klik link dan download hasilnya. \n\nKlik link dibawah🗡️\n\nJudul: ${judul}\n\nUkuran audio: ${size}\n\nLink: ${link} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
                    client.sendMessage(id, hasil, MessageType.text)
                })
@@ -194,7 +194,7 @@ client.on('message-new', async (m) => {
            ytdl('mp4', value)
                .then(data => {
                    const { judul, size, hasil: link } = data
-                   let hasil = `*✅ Video Berhasil Di Download* \nSilahkan klik link dan download hasilnya. \n\nKlik link dibawah🗡️\n\nJudul: ${judul}\n\nUkuran audio: ${size}\n\nLink: ${link} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `*✅ Video Berhasil Di Download* \nSilahkan klik link dan download hasilnya. \n\nKlik link dibawah🗡️\n\nJudul: ${judul}\n\nUkuran audio: ${size}\n\nLink: ${link} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
                    client.sendMessage(id, hasil, MessageType.text)
                })
@@ -206,7 +206,7 @@ client.on('message-new', async (m) => {
            tweetdl(value)
                .then(data => {
                     const { size, hasil: link } = data
-                    let hasil = `*✅ Berhasil! Silahkan klik link di bawah untuk mendownload hasilnya!* \n\nKlik link dibawah🗡️\n\nSize: ${size}\n\nLink: ${link} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                    let hasil = `*✅ Berhasil! Silahkan klik link di bawah untuk mendownload hasilnya!* \n\nKlik link dibawah🗡️\n\nSize: ${size}\n\nLink: ${link} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                     client.sendMessage(id, '[❗] WAIT BOSQ🖤', MessageType.text)
                     client.sendMessage(id, hasil ,MessageType.text)
                })
@@ -229,7 +229,7 @@ client.on('message-new', async (m) => {
            wikiid(value)
                .then(data => {
                     const { hasil: res } = data
-                    let hasil = `*📝Menurut Wikipedia* :\n\n${res} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                    let hasil = `*📝Menurut Wikipedia* :\n\n${res} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                     client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -240,7 +240,7 @@ client.on('message-new', async (m) => {
            jsholat(value)
                .then(data => {
                    const { Imsyak, Subuh, Dzuhur, Ashar, Maghrib, Isya, Dhuha } = data
-                   let hasil = `Jadwal sholat di *${value}* hari ini adalah\n\n⚡Imsyak : ${Imsyak}\n⚡Subuh : ${Subuh} WIB\n⚡Dzuhur : ${Dzuhur}WIB\n⚡Ashar : ${Ashar} WIB\n⚡Maghrib : ${Maghrib}\n⚡Isya : ${Isya} WIB\n⚡Tengah malam : ${Dhuha} WIB \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `Jadwal sholat di *${value}* hari ini adalah\n\n⚡Imsyak : ${Imsyak}\n⚡Subuh : ${Subuh} WIB\n⚡Dzuhur : ${Dzuhur}WIB\n⚡Ashar : ${Ashar} WIB\n⚡Maghrib : ${Maghrib}\n⚡Isya : ${Isya} WIB\n⚡Tengah malam : ${Dhuha} WIB \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -258,7 +258,7 @@ client.on('message-new', async (m) => {
                    const idText = acak.id.teks
                    const surah= surat.nama
 
-                   let hasil = `[${keterangan}]   ${arText}\n\n${idText}(QS.${surah}, Ayat ${keterangan}) \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`;
+                   let hasil = `[${keterangan}]   ${arText}\n\n${idText}(QS.${surah}, Ayat ${keterangan}) \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`;
                    client.sendMessage(id, hasil, MessageType.text);
                })
                .catch(err => {
@@ -278,7 +278,7 @@ client.on('message-new', async (m) => {
            corona()
                .then(data => {
                    const { meninggal, sembuh, positif } = data
-                   let hasil = `📌DATA WABAH COVID-19 TERBARU DI INDONESIA\n\n📍Positif ==> ${positif} \n📍Sembuh ==> ${sembuh} \n📍Meninggal ==> ${meninggal} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `📌DATA WABAH COVID-19 TERBARU DI INDONESIA\n\n📍Positif ==> ${positif} \n📍Sembuh ==> ${sembuh} \n📍Meninggal ==> ${meninggal} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -289,7 +289,7 @@ client.on('message-new', async (m) => {
            quotes()
                .then(data => {
                    const { author, quotes } = data
-                   let hasil = `${quotes}\n\n~${author} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `${quotes}\n\n~${author} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -300,7 +300,7 @@ client.on('message-new', async (m) => {
            artinama(value)
                .then(data => {
                    const { result: arti } = data
-                   let hasil = `\nArti nama mu adalah\n\n***********************************\n\n       _${value}_ ${arti}\n\n*********************************** \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `\nArti nama mu adalah\n\n***********************************\n\n       _${value}_ ${arti}\n\n*********************************** \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -312,7 +312,7 @@ client.on('message-new', async (m) => {
                .then(data => {
                    const { positif, negatif } = data
                    const nama = value.split(/[\&\-\/\+]/)
-                   let hasil = `\nKecocokan jodoh\n\n************************************\n\nPasangan 1: *${nama[0].trim()}*\nPasangan 2: *${nama[1].trim()}*\n\nsisi positif: ${positif}\nsisi negatif: ${negatif}\n\n*********************************** \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `\nKecocokan jodoh\n\n************************************\n\nPasangan 1: *${nama[0].trim()}*\nPasangan 2: *${nama[1].trim()}*\n\nsisi positif: ${positif}\nsisi negatif: ${negatif}\n\n*********************************** \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -360,7 +360,7 @@ client.on('message-new', async (m) => {
            lirik(value)
                .then(data => {
                    const { hasil: lirik } = data
-                   let hasil = `📍lirik lagu📍 *${value}* \n\n\n${lirik} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `📍lirik lagu📍 *${value}* \n\n\n${lirik} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -371,7 +371,7 @@ client.on('message-new', async (m) => {
            fb(value)
                .then(data => {
                    const { resultHD, resultSD } = data
-                   let hasil = `Pilih resolusi nya sayang😙 \n\n\n HD ${resultHD} \n\n\n SD ${resultSD} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `Pilih resolusi nya sayang😙 \n\n\n HD ${resultHD} \n\n\n SD ${resultSD} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -410,7 +410,7 @@ client.on('message-new', async (m) => {
                .then(data => {
                    const { Username, Jumlah_Followers, Jumlah_Following, Name, Jumlah_Post } = data
                    client.sendMessage(id, '[WAIT] Stalking...⏳', MessageType.text)
-                   let hasil = `✨Biodata Instagram _${value}_ \n\n 🧶 *Username* : ${Username}_ \n 🌀 *Nama* : _${Name}_ \n 🌟 *Jumlah Followers* : _${Jumlah_Followers}_ \n 🌠 *Jumlah_Following* : _${Jumlah_Following}_ \n ⭐ *Jumlah_Post* : _${Jumlah_Post}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `✨Biodata Instagram _${value}_ \n\n 🧶 *Username* : ${Username}_ \n 🌀 *Nama* : _${Name}_ \n 🌟 *Jumlah Followers* : _${Jumlah_Followers}_ \n 🌠 *Jumlah_Following* : _${Jumlah_Following}_ \n ⭐ *Jumlah_Post* : _${Jumlah_Post}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -421,7 +421,7 @@ client.on('message-new', async (m) => {
            cerpen()
                .then(data => {
                    const { result } = data
-                   let hasil = `${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -432,7 +432,7 @@ case 'puisi1':
            puisi1()
                .then(data => {
                    const { result} = data
-                   let hasil = `${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -443,7 +443,7 @@ case 'puisi2':
            puisi2()
                .then(data => {
                    const { result} = data
-                   let hasil = `${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -454,7 +454,7 @@ case 'puisi2':
            infogempa()
                .then(data => {
                    const { lokasi, kedalaman, koordinat, magnitude, waktu } = data
-                   let hasil = `*INFO GEMPA* \n\ *Lokasi* : _${lokasi}_ \n *Kedalaman* : _${kedalaman}_ \n *Koordinat* : _${koordinat}_ \n *Magnitude* : _${magnitude}_ \n *Waktu* : _${waktu}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `*INFO GEMPA* \n\ *Lokasi* : _${lokasi}_ \n *Kedalaman* : _${kedalaman}_ \n *Koordinat* : _${koordinat}_ \n *Magnitude* : _${magnitude}_ \n *Waktu* : _${waktu}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -465,7 +465,7 @@ case 'puisi2':
            chord(value)
                .then(data => {
                    const { result } = data
-                   let hasil = `Nih chord lagu *${value}* sayang ♥️\n\n  ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `Nih chord lagu *${value}* sayang ♥️\n\n  ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -475,7 +475,7 @@ case 'puisi2':
            kbbi(value)
                .then(data => {
                    const { result } = data
-                   let hasil = `*${value}* menurut KBBI ️\n\n  ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `*${value}* menurut KBBI ️\n\n  ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -487,7 +487,7 @@ case 'puisi2':
  zodiak(value)
                .then(data => {
                    const { lahir, ultah, usia, zodiak } = data
-                   let hasil = `*Lahir* : _${lahir}_ n\n *Ultah* : _${ultah}_ \n *Usia* : _${usia}_:\n *Zodiak* : _${zodiak}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `*Lahir* : _${lahir}_ n\n *Ultah* : _${ultah}_ \n *Usia* : _${usia}_:\n *Zodiak* : _${zodiak}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -498,7 +498,7 @@ case 'puisi2':
             simi(value)
                .then(data => {
                    const { result } = data
-                   let hasil = ` ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = ` ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -509,7 +509,7 @@ case 'puisi2':
            wikien(value)
                .then(data => {
                    const { result } = data
-                   let hasil = `*♻️According to Wikipedia🗿:* \n\n  ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `*♻️According to Wikipedia🗿:* \n\n  ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -520,7 +520,7 @@ case 'spamgmail':
            spamgmail()
                .then(data => {
                    const { logs } = data
-                   let hasil = `${logs} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `${logs} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -531,7 +531,7 @@ case 'spamgmail':
            spamcall()
                .then(data => {
                    const { logs } = data
-                   let hasil = `${logs} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `${logs} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -542,7 +542,7 @@ case 'spamgmail':
            spamsms()
                .then(data => {
                    const { logs } = data
-                   let hasil = `${logs} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `${logs} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -553,7 +553,7 @@ case 'spamgmail':
            covidcountry(value)
                .then(data => {
                    const { country, active, casesPerOneMillion, critical, deathsPerOneMillion, recovered, testPerOneMillion, todayCases, todayDeath, totalCases, totalTest } = data
-                   let hasil = `*Negara* : _${country}_ \n\n *Active* : _${active}_ \n *CasesPerOneMillion* : _${casesPerOneMillion}_ \n *Critical* : ${critical}\n *DeathsPerOneMillion* : _${deathsPerOneMillion}_ \n *Recovered* : _${recovered}_ \n *TestPerOneMillion* : _${testPerOneMillion}_ \n *TodayCases* : _${todayCases}_ \n *TodayDeath : _${todayDeath}\n *TotalCases* : _${totalCases}_ \n  *TotalTest* : _${totalTest}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `*Negara* : _${country}_ \n\n *Active* : _${active}_ \n *CasesPerOneMillion* : _${casesPerOneMillion}_ \n *Critical* : ${critical}\n *DeathsPerOneMillion* : _${deathsPerOneMillion}_ \n *Recovered* : _${recovered}_ \n *TestPerOneMillion* : _${testPerOneMillion}_ \n *TodayCases* : _${todayCases}_ \n *TodayDeath : _${todayDeath}\n *TotalCases* : _${totalCases}_ \n  *TotalTest* : _${totalTest}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -564,7 +564,7 @@ case 'spamgmail':
            infoanime(value)
                .then(data => {
                    const { result } = data
-                   let hasil = `*INFO ANIME ${value} :* \n\n ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `*INFO ANIME ${value} :* \n\n ${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -575,7 +575,7 @@ case 'gay':
            gay()
                .then(data => {
                    const { desc, persen } = data
-                   let hasil = `*${desc} \n\n *Persen Gay Lo Su!!!* _${persen}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `*${desc} \n\n *Persen Gay Lo Su!!!* _${persen}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -586,7 +586,7 @@ case 'gay':
            indohot()
                .then(data => {
                    const { judul, genre, durasi, url } = data
-                   let hasil = `Tobat GOBLOK😙* \n\n *Judul* _${judul}_ \n\n *Status* _${genre}_ \n\n *Durasi* _${durasi}_ \n\n *Link Bosq* _${url}_  \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `Tobat GOBLOK😙* \n\n *Judul* _${judul}_ \n\n *Status* _${genre}_ \n\n *Durasi* _${durasi}_ \n\n *Link Bosq* _${url}_  \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
