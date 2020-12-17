@@ -14,8 +14,8 @@ exports.donate = (id, A187, tampilTanggal, whatsapp, youtube, tampilWaktu, insta
 ║ *DONASI KE ${A187}*
 ╠════════════════════
 ║╭──❉ *DONASI BOS* ❉──
-║│➸ *DANA*: *0812-1889-8489*
-║│➸ *PULSA*: *0812-1889-8489*
+║│➸ *DANA*: *-*
+║│➸ *PULSA*: *+62 822-2549-1446*
 ║╰───────────
 ╠════════════════════
 ║╭──❉ *SOSMED ADMIN* ❉──
@@ -33,6 +33,6 @@ exports.donate = (id, A187, tampilTanggal, whatsapp, youtube, tampilWaktu, insta
 ║  ▌│█║▌║▌║║▌║▌║█│▌
 ║         ${A187}
 ╠════════════════════
-║ _*POWERED BY : CHANDRA ID*_
+║ _*POWERED BY : RANS ID*_
 ╚════════════════════`
 }
