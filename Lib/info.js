@@ -38,7 +38,7 @@ exports.info = (id, A187, tampilTanggal, whatsapp, youtube, tampilWaktu, instagr
 ║  ▌│█║▌║▌║║▌║▌║█│▌
 ║         ${A187}
 ╠════════════════════
-║ _*POWERED BY : CHANDRA ID*_
+║ _*POWERED BY : RANS ID*_
 ╚════════════════════`
 }
 
