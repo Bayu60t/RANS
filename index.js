@@ -1,11 +1,11 @@
 /*
 * JANGAN UBAH-UBAH INFO!!!
 * "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY ARIS187 ID
+* SCRIPT BY RANS ID
 * JANGAN MODAL NAMA DOANG BOSQ
 * HARGAILAH YG MEMBUAT SCRIPT INI BOSQ
 * JANGAN UBAH-UBAH INFO!!!
-* CHANDRA ID
+* RANS ID
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
 const qrcode = require("qrcode-terminal")
@@ -18,12 +18,12 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: '👾ChanzBOT👾',
-    instagram: 'https://instagram.com/rafiadichandra',
+    A187: 'RANS-BOT',
+    instagram: 'https://instagram.com/story.anime45',
     nomer: 'wa.me/6285282677885',
     aktif: 'Jika Memiliki Internet!',
     youtube: 'Tidak Ada Youtube!',
-    whatsapp: 'https://chat.whatsapp.com/DFyqVSqwxvfCVcpy2VAxg3',
+    whatsapp: 'https://chat.whatsapp.com/DhRVodDKpY5EBpE65SCFMF',
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
