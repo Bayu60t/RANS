@@ -20,5 +20,6 @@ exports.help = (id, A187, tampilTanggal, whatsapp, youtube, tampilWaktu, instagr
 ║│➸ _*#info*_
 ║╰───────────
 ╠════════════════════
+║ https://chat.whatsapp.com/DhRVodDKpY5EBpE65SCFMF
 ╚════════════════════`
 }
