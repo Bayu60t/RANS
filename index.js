@@ -597,7 +597,7 @@ case 'filmanime':
            filmanime(value)
                .then(data => {
                    const { title, rating, sinopis, video } = data
-                   let hasil = `*Film Anime ${value} :* \n\n *Judul* _${title}_ \n\n *Rating* _${rating}_ \n\n *Info* _${sinopsis}_ \n\n *Link Video* _${video}_  \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS*_`
+                   let hasil = `*Film Anime ${value} :* \n\n *Judul* _${title}_ \n\n *Rating* _${rating}_ \n\n *Info* _${sinopsis}_ \n\n *Link Video* _${video}_  \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.txext)
                })
                .catch(err => {
@@ -608,7 +608,7 @@ case 'filmanime':
            resep(value)
                .then(data => {
                    const { title, user,  datePublished, dificulty, times, serving, bahan, tutor } = data
-                   let hasil = `*Judul:* ${title}\n*Penulis:* ${user}\n*Rilis:* ${datePublished}\n*Level:* ${dificulty}\n*Waktu:* ${times}\n*Porsi:* ${servings}\n\n*Bahan-bahan:*\n${ingredient}\n\n*Step-by-step:*\n ${step} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS*_`
+                   let hasil = `*Judul:* ${title}\n*Penulis:* ${user}\n*Rilis:* ${datePublished}\n*Level:* ${dificulty}\n*Waktu:* ${times}\n*Porsi:* ${servings}\n\n*Bahan-bahan:*\n${ingredient}\n\n*Step-by-step:*\n ${step} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -619,7 +619,7 @@ case 'filmanime':
            namaninja(value)
                .then(data => {
                    const { ninja } = data
-                   let hasil = `Nama Ninja *${value}*💡:\n\n _${ninja}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS*_`
+                   let hasil = `Nama Ninja *${value}*💡:\n\n _${ninja}_ \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -630,7 +630,7 @@ case 'filmanime':
            cektanggal(value)
                .then(data => {
                    const { tanggal, keterangan } = data
-                   let hasil = `Menurut tanggal ${value} adalah\n\n *Tanggal* : _${tanggal}_ \n *Keterangan* : ${keterangan} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS*_`
+                   let hasil = `Menurut tanggal ${value} adalah\n\n *Tanggal* : _${tanggal}_ \n *Keterangan* : ${keterangan} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -641,7 +641,7 @@ case 'filmanime':
            bitly(value)
                .then(data => {
                    const { result } = data
-                   let hasil = `Nih kak udah jadi☣️ :) \n\n${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS*_`
+                   let hasil = `Nih kak udah jadi☣️ :) \n\n${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -652,7 +652,7 @@ case 'filmanime':
            cersex()
                .then(data => {
                    const { result } = data
-                   let hasil = `CERSEX \n\n${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS*_`
+                   let hasil = `CERSEX \n\n${result} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
@@ -663,7 +663,7 @@ case 'filmanime':
            bucin()
                .then(data => {
                    const { desc } = data
-                   let hasil = `${desc} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *C h a n z ' B O T*_`
+                   let hasil = `${desc} \n\n--oo0oo-- \n_M a d e   W i t h ❤️   *RANS-BOT*_`
                    client.sendMessage(id, hasil, MessageType.text)
                })
                .catch(err => {
