@@ -19,8 +19,8 @@ exports.info = (id, A187, tampilTanggal, whatsapp, youtube, tampilWaktu, instagr
 ║  *MENGGANTI INFO!!!*
 ╠════════════════════
 ║╭──❉ *INFO* ❉──
-║│➸ *AUTHOR*: *Chandra ID*
-║│➸ *DESIGNER*: *Chandra ID*
+║│➸ *AUTHOR*: *RANS ID*
+║│➸ *DESIGNER*: *RANS ID*
 ║╰───────────
 ╠════════════════════
 ║╭──❉ *SOSMED ADMIN* ❉──
